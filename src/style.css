@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    font-family: "Merriweather", serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 10vh 90vh;
+}
+
+.header {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #eaebec;
+    border-bottom: solid 0.2em;
+}
+
+.main-content{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 1rem;
+}
+
+
+
+.projects-title{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid;
+    padding-bottom: 0.5em;
+}
+
+.add-project-modal, .add-task-modal, .open-task-modal, .edit-task-modal{
+    margin: auto;
+    border-radius: 1em;
+}
+
+.left-content{
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+}
+
+.project-card{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.task-header{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.task-div{
+    background-color: lightblue;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 0.3em;
+}
+
+.task-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+
+
+.buttons-div, .title-div{
+    display: flex;
+    gap: 1em;
+}
+
+.edit-task, .delete-task{
+    cursor: pointer;
+    padding: 0.5em 1.5em;
+    border: none;
+    background-color: #DEC5E3;
+    border-radius: 0.5em;
+    font-weight: bold;
+}
+
+.delete-task{
+    background-color: indianred;
+}
+
+input[type="checkbox"]{
+    width: 2.5em;
+    cursor: pointer;
+    
+}
+
+.buttons-div{
+    align-items: center;
+}
+
+.blue{
+    color: #5B99C2;
+}
+
+.title{
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+}
+
+.logo{
+    width: 2.5em;
+}
+
+.sign{
+    background-color: transparent;
+    border: solid 0.2em;
+    padding: 0.5em 1em;
+    border-radius: 1.3em;
+    cursor: pointer;
+    color: #5B99C2;
+}
+
+.right-content{
+    background-color: #f7f5f5;
+    padding: 1.5em;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+}
+
+.highlightproject{
+    border-bottom-right-radius: 1em;
+    border-top-right-radius: 1em;
+    background-color: lightblue;
+    padding: 0.5em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.add-project-button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.delete{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.add-task-button{
+    padding: 0.5em 1em;
+    background-color: white;
+    border-radius: 1em;
+    color: black;
+    border: solid 0.2em #5B99C2;
+    cursor: pointer;
+}
+
+
+
+.task-form, .edit-task-form, .open-task-form, .form{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 1em;
+    gap: 1em;
+    align-items: center;
+    background-color: #5B99C2;
+}
+
+
+.task-form input , .task-form select , .edit-task-form input, .edit-task-form select,.open-task-form input, .open-task-form select, form input{
+    height: 2em;
+    border: none;
+}
+
+
+.task-form .actions , .edit-task-form .actions, .open-task-form .actions, .form .actions{
+    grid-column: 2;
+    justify-self: end;
+}
+
+.task-form label , .edit-task-form label, .open-task-form label, .form label{
+    color: white;
+    font-weight: bold;
+}
+
+.actions button {
+    padding: 0.4em 1em;
+    background-color: #403D58;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input:disabled, select:disabled{
+    color: black;
+}
